@@ -1,0 +1,8 @@
+extends layout
+block content
+    div.jumbotron
+        div.container
+            - if(user)
+                include ./say.jade
+    div.container
+        include ./posts.jade
